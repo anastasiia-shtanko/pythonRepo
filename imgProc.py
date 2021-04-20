@@ -10,7 +10,7 @@ class imgProc:
     def showImg(self):
         img = cv.imread(self.image)
         cv.imshow("Image", img)
-        cv.waitKey(5)
+        cv.waitKey(0)
 
     def addTwoImg(self, image2):
         img = cv.imread(self.image)
@@ -34,3 +34,9 @@ class imgProc:
         plt.subplot(122), plt.imshow(blur), plt.title('Blurred')
         plt.xticks([]), plt.yticks([])
         plt.show()
+
+    def invertImg(self):
+        img = cv.imread(self.image)
+        dest_not = cv.bitwise_not(img, mask=None)
+        cv.imshow('Inverted image', dest_not)
+        cv.waitKey(0)

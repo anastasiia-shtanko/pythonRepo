@@ -11,8 +11,9 @@ myImg2 = imgProc.imgProc("cosmos.jpg")
 
 myImg.showImg()
 myImg2.blurImg()
+myImg.invertImg()
 
 myImg.addTwoImg(myImg2.image)
-myImg.substrTwoImg(myImg.image)
+myImg.substrTwoImg(myImg2.image)
 
 cv.destroyAllWindows()
