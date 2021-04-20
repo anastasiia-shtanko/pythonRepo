@@ -1,7 +1,7 @@
 import Parent
 
 
-class Child(Parent):
+class Child(Parent.Parent):
     def __init__(self, name, age, height):
         super().__init__(name, age)
         self.height = height
@@ -15,6 +15,6 @@ class Child(Parent):
 
     def show(self):
         print("Name: ", self.name, ",")
-        print("Age: ", self.age, " years,")
-        print("Height: ", self.height, " sm.")
+        print("Age: ", self.age, " years ,")
+        print("Height: ", self.height, " cm.")
 
