@@ -9,11 +9,15 @@ me.show()
 myImg = imgProc.imgProc("shrek.jpg")
 myImg2 = imgProc.imgProc("cosmos.jpg")
 
-myImg.showImg()
-myImg2.blurImg()
-myImg.invertImg()
+myImg.showImg("Beware ogre")
+myImg2.blur()
+myImg.invert()
+myImg2.resize()
+myImg.erode()
 
-myImg.addTwoImg(myImg2.image)
-myImg.substrTwoImg(myImg2.image)
+myImg.addTwoImgs(myImg2.image)
+myImg.substrTwoImgs(myImg2.image)
+
+myImg.crown()
 
 cv.destroyAllWindows()
